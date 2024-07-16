@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@400;500&display=swap');
+
+:root {
+  --color-primary-1: rgb(73, 94, 87);
+  --color-primary-2: rgb(244, 206, 20);
+  --color-secondary-0: rgb(237, 120, 66);
+  --color-secondary-1: rgb(238, 153, 114);
+  --color-secondary-2: rgb(251, 218, 187);
+  --color-highlight-1: rgb(237, 239, 238);
+  --color-highlight-2: rgb(51, 51, 51);
+  --color-highlight-3: rgb(204, 204, 204);
+  --color-highlight-4: rgb(190, 190, 190);
+
+  --type-title: 6.4rem;
+  --type-subtitle: 4rem;
+  --type-regular: 2rem;
+  --type-lead: 1.8rem;
+  --type-text: 1.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--type-text);
+  color: var(--color-highlight-2);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  display: contents;
+}

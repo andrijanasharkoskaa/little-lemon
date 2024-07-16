@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+  margin-bottom: 10rem;
+}
+
+.logo-link {
+  margin-right: 10rem;
+}
+
+.primary-logo {
+  min-width: 22.2rem;
+  height: 6rem;
+  position: relative;
+  z-index: 4;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+}
+
+.header-item {
+  margin-right: 2rem;
+}
+
+.header-item:hover {
+  border-bottom: 0.1rem solid var(--color-highlight-2);
+}
+
+.basket-icon {
+  width: 3rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-button {
+  display: none;
+  order: 2;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: var(--color-highlight-2);
+  display: inline-block;
+  position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.menu-icon::before {
+  top: -0.8rem;
+}
+
+.menu-icon::after {
+  top: 0.8rem;
+}
+
+.menu-checkbox:checked ~ .header-nav {
+  display: flex;
+  position: absolute;
+  top: 10rem;
+}
+
+.menu-checkbox:checked ~ .header-nav .header-list {
+  background-color: var(--color-primary-1);
+  color: var(--color-highlight-1);
+  width: 100vw;
+  height: 5rem;
+  justify-content: center;
+}
+
+.menu-checkbox:checked + .menu-button .menu-icon {
+  background-color: transparent;
+}
+
+.menu-checkbox:checked + .menu-button .menu-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.menu-checkbox:checked + .menu-button .menu-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.menu-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  display: none;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .header-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .header-item:hover {
+    border-bottom: 0.1rem solid white;
+  }
+}
