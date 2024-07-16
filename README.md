@@ -3,9 +3,11 @@
 <p>Then run <I><strong>npm star</strong>t</i> in the folder where the project is located to run it locally on your web browser.</p>
 
 Install if needed:
-<ol>
+<ul>
 <li>npm install react-router-dom</li>
 <li>npm install react-ga4</li>
-</ol>
+</ul>
+
+
 (it might show some errors if these packages are not installed with the standard npm install, so you might need to install them individually)
 
