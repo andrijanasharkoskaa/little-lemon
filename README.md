@@ -1,3 +1,3 @@
-<h1>Run the npm package with the command <i>npm install</i> to install the required dependencies in order to run the project</h1>
+<p>Run the npm package with the command <I><strong>npm install</strong></i> to install the required dependencies in order to run the project</p>
 
-<h1>Then run <i>npm start</i> in the folder where the project is located to run it locally on your web browser.</h1>
+<p>Then run <I><strong>npm star</strong>t</i> in the folder where the project is located to run it locally on your web browser.</p>
